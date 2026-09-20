@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Schibsted+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <script src="glitch.js" defer></script>
   <style>
     :root {
       --ruby: #861F2E;
@@ -49,6 +50,18 @@
       line-height: 0.85;
       letter-spacing: -0.045em;
       margin-left: -0.04em;
+      position: relative;
+      width: fit-content;
+    }
+
+    h1.glitch-on,
+    h1.glitch-on span {
+      color: transparent;
+    }
+
+    h1 .glitch {
+      position: absolute;
+      pointer-events: none;
     }
 
     h1 span {
